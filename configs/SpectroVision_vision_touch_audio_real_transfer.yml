@@ -1,0 +1,11 @@
+vision_backbone: resnet18
+touch_backbone: resnet18
+audio_backbone: vggish
+
+vision_checkpoint: './exp_1000/SpectroVision_vision_touch_audio/bst.pth'
+touch_checkpoint: './exp_1000/SpectroVision_vision_touch_audio/bst.pth'
+audio_checkpoint: './exp_1000/SpectroVision_vision_touch_audio/bst.pth'
+all_checkpoint: './exp_1000/SpectroVision_vision_touch_audio/bst.pth'
+
+histogram_type: encoding
+dim: 15

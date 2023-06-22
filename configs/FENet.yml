@@ -1,0 +1,6 @@
+vision_backbone: resnet18
+touch_backbone: resnet18
+audio_backbone: vggish
+
+histogram_type: encoding
+dim: 15

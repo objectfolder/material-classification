@@ -1,0 +1,7 @@
+touch_backbone: resnet18
+audio_backbone: vggish
+
+audio_backbone_checkpoint: './exp_1000/SpectroVision_audio/audio_backbone.pth'
+touch_backbone_checkpoint: './exp_1000/SpectroVision_touch/touch_backbone.pth'
+audio_mlp_checkpoint: './exp_1000/SpectroVision_audio/audio_mlp.pth'
+touch_mlp_checkpoint: './exp_1000/SpectroVision_touch/touch_mlp.pth'

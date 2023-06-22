@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#
+#SBATCH --job-name=mat_cls
+#SBATCH --partition=svl
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=16
+#SBATCH --time 48:00:00
+#SBATCH --output=exp_1000/logs/FENet_vision_touch_slurm_%A.out
+#SBATCH --error=exp_1000/logs/FENet_vision_touch_slurm_%A.err
+#SBATCH --mail-user={your_email}
+#SBATCH --mail-type=ALL
+
+
+######################
+# Begin work section #
+######################
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+echo "SLURMTMPDIR="$SLURMTMPDIR
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+python main.py --model FENet --config_location ./configs/FENet_vision_touch.yml \
+               --modality_list vision touch --batch_size 128 --num_workers 8 \
+               --lr 1e-5 --weight_decay 1e-2 --exp FENet_vision_touch \
+               --epochs 10 --finetune

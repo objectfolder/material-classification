@@ -1,0 +1,9 @@
+vision_backbone: resnet18
+
+# vision_backbone_checkpoint: './exp_1000/test/vision_backbone.pth'
+# audio_backbone_checkpoint: './exp_1000/test/audio_backbone.pth'
+# touch_backbone_checkpoint: './exp_1000/test/touch_backbone.pth'
+# vision_mlp_checkpoint: './exp_1000/test/vision_mlp.pth'
+# audio_mlp_checkpoint: './exp_1000/test/audio_mlp.pth'
+# touch_mlp_checkpoint: './exp_1000/test/touch_mlp.pth'
+# classifier_checkpoint: './exp_1000/test/classifier.pth'

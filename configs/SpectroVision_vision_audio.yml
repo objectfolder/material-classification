@@ -1,0 +1,7 @@
+vision_backbone: resnet18
+audio_backbone: vggish
+
+vision_backbone_checkpoint: './exp_1000/SpectroVision_vision/vision_backbone.pth'
+audio_backbone_checkpoint: './exp_1000/SpectroVision_audio/audio_backbone.pth'
+vision_mlp_checkpoint: './exp_1000/SpectroVision_vision/vision_mlp.pth'
+audio_mlp_checkpoint: './exp_1000/SpectroVision_audio/audio_mlp.pth'

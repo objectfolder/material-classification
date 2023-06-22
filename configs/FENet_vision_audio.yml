@@ -1,0 +1,8 @@
+vision_backbone: resnet18
+audio_backbone: vggish
+
+vision_checkpoint: './exp_1000/FENet_vision/bst.pth'
+audio_checkpoint: './exp_1000/FENet_audio/bst.pth'
+
+histogram_type: encoding
+dim: 15

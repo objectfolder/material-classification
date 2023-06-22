@@ -1,0 +1,8 @@
+touch_backbone: resnet18
+audio_backbone: vggish
+
+touch_checkpoint: './exp_1000/FENet_touch/bst.pth'
+audio_checkpoint: './exp_1000/FENet_audio/bst.pth'
+
+histogram_type: encoding
+dim: 15
