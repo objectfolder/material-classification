@@ -4,6 +4,10 @@ All objects are labeled by seven material types: ceramic, glass, wood, plastic, 
 
 ## Usage
 
+#### Data Preparation
+
+The dataset used to train the baseline models can be downloaded from [here](https://www.dropbox.com/scl/fo/ymd3693807jucdxj7cj1k/AMtyNZgmC1ynxFWZtVsV5gI?rlkey=hr1y85tzadepw7zb5wb9ebs0b&st=xr2keno9&dl=0)
+
 #### Training & Evaluation
 
 Start the training process, and test the best model on test-set after training:
